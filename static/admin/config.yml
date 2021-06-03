@@ -37,6 +37,6 @@ collections:
         widget: "relation"
         collection: "categoreis"
         file: "cities"
-        search_fields: ["title"]
-        display_fields: ["title"]
-        value_field: "title"
+        search_fields: ["categoreis.title"]
+        display_fields: ["categoreis.title"]
+        value_field: "categoreis.title"
