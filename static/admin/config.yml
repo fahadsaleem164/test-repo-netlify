@@ -1,0 +1,22 @@
+backend:
+  name: github
+  # change repo to your git repository url
+  branch: master
+  repo: fahadsaleem164/test-repo-netlify
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+  - name: categoreis
+    label: Categories
+    label_singular: Categories
+    folder: src/pages/posts/category/
+    summary: '{{title}}'
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines for Category.
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+  
+
+ 
