@@ -18,3 +18,25 @@ collections:
       guidelines for Category.
     fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+
+
+  - name: products
+    label: Products
+    label_singular: Products
+    folder: src/pages/posts/products/
+    summary: '{{title}}'
+    create : true
+    description: >
+      The description is a great place for tone setting, high level information, and editing
+      guidelines for Products.
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Description', name: 'description', widget: 'string', tagname: 'h1' }
+      - label: "Catgoreis"
+        name: "cat"
+        widget: "relation"
+        collection: "categoreis"
+        file: "cities"
+        search_fields: ["title"]
+        display_fields: ["title"]
+        value_field: "title"
