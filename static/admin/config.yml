@@ -12,11 +12,9 @@ collections:
     label_singular: Categories
     folder: src/pages/posts/category/
     summary: '{{title}}'
+    create : true
     description: >
       The description is a great place for tone setting, high level information, and editing
       guidelines for Category.
     fields:
       - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-  
-
- 
